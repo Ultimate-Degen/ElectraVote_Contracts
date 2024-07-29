@@ -1,0 +1,31 @@
+{
+  "name": "electravote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "hardhat test",
+    "deploy-voter-registration": "hardhat run scripts/deployVoterRegistration.js --network scroll",
+    "deploy-vote-casting": "hardhat run scripts/deployVoteCasting.js --network scroll",
+    "deploy-result-tallying": "hardhat run scripts/deployResultTallying.js --network scroll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
+    "@nomicfoundation/hardhat-ethers": "^3.0.6",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.11",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.8",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/mocha": "^10.0.7",
+    "dotenv": "^16.0.3",
+    "ethers": "^6.3.0",
+    "hardhat": "^2.22.6"
+  }
+}
